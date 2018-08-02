@@ -1,0 +1,185 @@
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include display(flex, column);
+}
+
+.header {
+    width: 100%;
+    height: px2rem(55px);
+    background: -webkit-linear-gradient(left, #FF8E01, #FF5A00);
+    @include display(flex, row);
+    p {
+        width: px2rem(50px);
+        @include display(flex, column);
+        color: #fff;
+    }
+    form {
+        flex: 1;
+        position: relative;
+        input {
+            width: 100%;
+            height: px2rem(40px);
+            border: 0;
+            outline: 0;
+            border-radius: px2rem(20px);
+            padding-left: px2rem(25px);
+        }
+        i.icon {
+            position: absolute;
+            left: px2rem(5px);
+            top: px2rem(10px);
+        }
+    }
+}
+
+.section {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+}
+
+.banner {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.list {
+    width: 100%;
+    padding: px2rem(15px) px2rem(10px);
+    ul {
+        width: 100%;
+        @include display(flex, row, space-between);
+        flex-wrap: wrap;
+        li {
+            width: 20%;
+            @include display(flex, column);
+            padding-top: px2rem(5px);
+            img {
+                width: 50px;
+                height: auto;
+            }
+            span {
+                height: px2rem(30px);
+                line-height: px2rem(30px);
+            }
+        }
+    }
+}
+
+.vertical {
+    width: 100%;
+    height: px2rem(100px);
+    @include display(flex, row, flex-start);
+    p {
+        width: px2rem(80px);
+        img {
+            width: 100%;
+        }
+    }
+    .ban {
+        flex: 1;
+        height: px2rem(100px);
+        padding-left: px2rem(15px);
+        ul {
+            width: 100%;
+            height: px2rem(100px);
+            li {
+                width: 100%;
+                height: 100%;
+                @include display(flex, row, space-between);
+                .text {
+                    flex: 1;
+                    @include display(flex, column, flex-start, flex-start);
+                    p {
+                        width: 100%;
+                        @include display(flex, row, flex-start);
+                        padding-top: px2rem(5px);
+                        span {
+                            &:nth-child(1) {
+                                border: 1px solid red;
+                            }
+                            &:nth-child(2) {
+                                padding-left: px2rem(10px);
+                            }
+                        }
+                    }
+                }
+                img {
+                    width: px2rem(60px);
+                }
+            }
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    .top {
+        width: 100%;
+        @include display(flex, row);
+        .left {
+            width: 50%;
+            @include display(flex, row, center, center);
+            .one {
+                width: 50%;
+                @include display(flex, column, flex-end);
+                h1 {
+                    padding-left: px2rem(15px);
+                    font-size: 18px;
+                }
+                img {
+                    width: px2rem(60px);
+                }
+            }
+            .two {
+                width: 50%;
+                img {
+                    width: px2rem(70px);
+                }
+            }
+        }
+        .right {
+            width: 50%;
+            @include display(flex, row, center, center);
+            .one {
+                width: 50%;
+                @include display(flex, column, flex-end);
+                h1 {
+                    padding-top: px2rem(10px);
+                    padding-left: px2rem(15px);
+                    font-size: 18px;
+                }
+                img {
+                    width: px2rem(60px);
+                }
+            }
+            .two {
+                width: 50%;
+                img {
+                    width: px2rem(70px);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: px2rem(50px);
+    ul {
+        width: 100%;
+        height: 100%;
+        @include display(flex, row);
+        li {
+            width: 20%;
+            @include display(flex, column, center, center);
+            img {
+                width: px2rem(40px);
+            }
+        }
+    }
+}
